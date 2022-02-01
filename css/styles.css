@@ -29,7 +29,7 @@ body {
 #add-todo-form{
     margin-bottom: 20px;
     font-size: 30px;
-    text-transform: capitalize;text-align: center;
+    text-transform: capitalize;
     font-weight: 600;
     display: block;
 }
@@ -68,7 +68,6 @@ button {
     width: 350px;
     border: 1px solid #b8b8b8;
     padding: 10px 15px 0px 15px;
-    text-align: center;
     border-radius: 10px;
     flex-basis: auto;
  }   
@@ -76,7 +75,6 @@ button {
 #todo-output {
   margin-bottom: 15px;
   cursor: auto;
-  border-radius: 5px;
   padding: 20px;
   border: 2px solid #b8b8b8;
 }

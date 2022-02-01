@@ -1,20 +1,17 @@
-const form = document.querySelector("#add-todo-form");
+const form = document.querySelector(".form");
+const input = document.querySelector("#input-todo");
+const addList = document.getElementById("todo-output");
 
-const todoList = document.querySelector("#todo-output");
-
-const result = document.querySelector("#input-todo");
-
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", e => {
     e.preventDefault();
     const todoItem = document.createElement("div");
-    todoItem.innerText = todoInput.value;
-    todoItem.classList.add("todo-item");
+    todoItem.innerText = input.value;
+    todoItem.className = "todo-item";
+    addList.appendChild(todoItem);
+    input.value = "";
 
-    todoList.appendChild(todoItem);
-
-    todoInput.value = "";
-
-    todoItem.addEventListener("click", function () {
+    todoItem.addEventListener("click", () => {
         todoItem.remove();
+
   });
 });
